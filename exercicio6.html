@@ -1,0 +1,25 @@
+<meta charset=UTF-8>
+<script>
+
+    const nota1 = Number(prompt(`qual foi a sua nota no primeiro trimestre?`).replace(",","."));
+    const nota2 = Number(prompt(`qual foi a sua nota no segundo trimestre?`).replace(",","."));
+    const nota3 = Number(prompt(`qual foi a sua nota no terceiro trimestre?`).replace(",","."));
+    
+    
+    const calculo1 = (nota1 + nota2 + nota3);
+    const media = (calculo1 / 3);
+    
+    if (media < 4) {
+        alert(`Voce esta reprovado`)
+    }
+    
+    else if (media < 6) {
+        alert (`Voce esta de recuperacao`);
+    }
+    
+    else {
+        alert (`Voce esta aprovado`)
+    }
+    
+    
+    </script>
